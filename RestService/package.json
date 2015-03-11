@@ -1,0 +1,19 @@
+{
+  "name": "SimpleCMSREST",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eventemitter2": "^0.4.14",
+    "lodash": "^2.4.1",
+    "mongoose": "^3.8.15",
+    "mongoose-auto-increment": "^3.0.8",
+    "restify": "^2.8.2"
+  },
+  "devDependencies": {}
+}

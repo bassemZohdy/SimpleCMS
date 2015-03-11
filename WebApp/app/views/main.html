@@ -1,0 +1,12 @@
+<button class="btn btn-default" ng-click="openQ()">Q</button>
+
+<button class="btn btn-default" ng-click="openT()">T</button>
+
+<h2>Contnets:</h2>
+<button class="btn btn-success" ng-click="newContent()">New Content</button>
+<div ng-repeat="content in contents">
+    <div class="row marketing">
+        <content-outlines content="content" class="outline" ng-click="selectContent(content)" ng-class="{selected:content._id===selected._id}"></content-outlines>
+    </div>
+</div>
+<pagination total-items="count" ng-model="currentPage" ng-change="pageChanged()" boundary-links="true" max-size="5" rotate="false"></pagination>

@@ -1,0 +1,17 @@
+<!--<select ng-options="mode.value as mode.label for mode in modes" ng-model="mode"></select>-->
+
+<div class="btn-group" dropdown>
+    <button type="button" class="btn btn-primary">Mode</button>
+    <button type="button" class="btn btn-primary dropdown-toggle">
+        {{mode}}
+        <span class="caret"></span>
+        <span class="sr-only">Split button!</span>
+    </button>
+
+    <ul class="dropdown-menu" role="menu">
+        <li ng-repeat="m in modes">
+            <a href ng-model="mode" ng-click="selectMode(m)">{{m}}</a>
+        </li>
+    </ul>
+</div>
+<content-view></content-view>

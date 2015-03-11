@@ -1,0 +1,42 @@
+<div>
+<form role="form">
+    <span class="form-group">
+        <label for="name">Name:</label>
+        <input class="form-control" id="name" ng-model="content.name"/>
+    </span>
+    <span class="form-group">
+        <label for="title">Title:</label>
+        <input class="form-control" id="title" ng-model="content.title"/>
+    </span>
+    <span class="form-group">
+        <label for="outlines">Outlines:</label>
+        <textarea class="form-control" id="outlines" ng-model="content.outlines"/>
+    </span>
+    <span class="form-group">
+        <lable>Body:</lable>
+        <text-angular ng-model="content.body"></text-angular>
+        <!--<div contenteditable="true" ng-model="content.body" ng-bind-html="content.body"></div>-->
+    </span>
+    <span class="form-group">
+        <lable>Status:</lable>
+            <div class="btn-group">
+                <label class="btn btn-primary" ng-model="content.status" btn-radio="'draft'">Draft</label>
+                <label class="btn btn-primary" ng-model="content.status" btn-radio="'approved'">Approved</label>
+            </div>
+    </span>
+    <br/>
+    <span class="form-group">
+        <label>Tags:</label>
+
+        <!--<select multiple ng-options="tag.name for tag in tags" ng-model="content.tags"/>-->
+
+        <input ui-select2="select2Options" ng-model="content.tags" class="tags"/>
+    </span>
+    <br/><br/><br/>
+    <span class="form-group">
+        <button ng-click="resetContent()" class="btn btn-primary">RESET</button>
+        <button ng-click="saveContent(content)" class="btn btn-success">SAVE</button>
+        <button ng-click="deleteContent(content)" class="btn btn-danger">DELETE</button>
+    </span>
+</form>
+</div>

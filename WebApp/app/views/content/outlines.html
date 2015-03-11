@@ -1,0 +1,7 @@
+<div class="wrapper">
+    <div class="ribbon-wrapper-green" ng-show="content.status === 'draft'"><div class="ribbon-green">Draft</div></div>
+    <h3>{{content.title}}</h3>
+    <p class="lead">{{content.outlines}}</p>
+    <p class="text-right small muted">created At : {{content.created | date:'medium'}}</p>
+    <p class="text-right small muted">Last update At : {{content.updated | date:'medium'}}</p>
+</div>

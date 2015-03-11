@@ -1,0 +1,8 @@
+<div>
+    <h2 contenteditable="{{mode === 'inline'}}" ng-model="content.title" >{{content.title}}</h2>
+    <p class="text-right small muted">created At : {{content.created | date:'medium'}}</p>
+    <div id="test" ng-show="mode !== 'inline'"  ng-model="content.body" ng-bind-html="content.body"></div>
+    <text-angular ng-show="mode === 'inline'" ng-model="content.body" ta-toolbar="[]"></text-angular>
+    <br/>
+    <button type="button" ng-show="mode === 'inline'" ng-click="saveContent(content)" class="btn btn-danger">Save</button>
+</div>
