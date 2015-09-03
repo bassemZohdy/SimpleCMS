@@ -15,7 +15,7 @@ I'm using dockerfile as there was many issues for installing ENV of this applica
   + grunt serve &
   + from browser http://localhost:9000
 
-
+#Building Application without Docker
 Steps to run application:
 + install mongod and start it in default port
 + install node,npm,bower
